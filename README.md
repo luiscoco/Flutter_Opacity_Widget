@@ -1,16 +1,40 @@
 # flutter_opacity_widget
 
-A new Flutter project.
+![image](https://github.com/luiscoco/flutter_opacity_widget/assets/32194879/a2d38d0e-077e-4f5a-b748-0f09edaaca69)
 
-## Getting Started
+```dart
+import 'package:flutter/material.dart';
 
-This project is a starting point for a Flutter application.
+void main() {
+  runApp(MyApp());
+}
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Opacity Widget Sample'),
+        ),
+        body: Center(
+          child: Opacity(
+            opacity: 0.5, // Set the opacity value between 0.0 and 1.0
+            child: Container(
+              width: 200,
+              height: 200,
+              color: Colors.blue,
+              child: Center(
+                child: Text(
+                  'Hello Flutter!',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+```
