@@ -1,4 +1,6 @@
-# flutter_opacity_widget
+# Flutter Opacity Widget
+
+https://api.flutter.dev/flutter/widgets/Opacity-class.html
 
 ![image](https://github.com/luiscoco/flutter_opacity_widget/assets/32194879/a2d38d0e-077e-4f5a-b748-0f09edaaca69)
 
